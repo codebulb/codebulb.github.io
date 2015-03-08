@@ -1,8 +1,97 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<p>codebulb.ch</p>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <title>codebulb.ch source code repositories</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/page.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body role="document">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img alt="Brand" src="images/logo.png"/>codebulb.ch GitHub Page</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><div>Last update: March 8, 2015</div></li>
+                    <li><a href="https://github.com/codebulb?tab=repositories"><span class="fa fa-lg fa-github"></span>GitHub</a></li>
+                    <li><a href="http://www.codebulb.ch"><span class="fa fa-lg fa-home"></span>Blog</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>codebulb.ch repositories</h1>
+            <p>Here you find the public source code repositories of <a href="http://www.codebulb.ch">codebulb.ch</a>. These GitHub repositories contain either sample code presented within the context of a codebulb.ch blog post or the source code of public open source projects.</p>
+            <p>You can either use this GitHub Page or the <a href="https://github.com/codebulb?tab=repositories">GitHub Profile</a> to navigate through the available repositories. On this GitHub page, repositories are categorized by topic, and sorted by publish date.</p>
+            <p>Jump to the topic of your choice:
+            <div class="dropdown">
+                <button class="btn btn-lg btn-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-expanded="true">
+                    Topic...
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#groovy">Groovy</a></li>
+                </ul>
+            </div>
+            </p>
+        </div>
+
+    </div> <!-- /container -->
+
+    <div class="container">
+        <div class="page-header"><h1><span id="groovy"></span>Groovy</h1></div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-right">published on March 8, 2015 by codebulb.ch</div>
+                    <div class="panel-body">
+                        <h2>10 most useful Groovy features</h2>
+                        <p>A simple demo project showcasing Groovy’s “top 10 features” as they are presented in the accompanying blog post. The project includes unit tests which prove Groovy / Java code equality.</p>
+                        <p class="pull-right">
+                            <a class="btn btn-default" href="http://www.codebulb.ch/2015/03/02/ten-most-useful-groovy-features-part-1" role="button"><i class="fa fa-lg fa-file-text-o"></i>View blog post &raquo;</a>
+                            <a class="btn btn-default" href="https://github.com/codebulb/top10groovyfeatures" role="button"><i class="fa fa-lg fa-github"></i>View on GitHub &raquo;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted text-center">Copyright &copy; 2015 Nicolas Hofstetter (codebulb.ch). All rights reserved. All source code may be redistributed and used under the terms of the <a href="./LICENSE">New BSD License</a>.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
