@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>cf (CrudFaces 1.0-SNAPSHOT VDL Documentation)
+			</title>
+<link rel="stylesheet" type="text/css" title="Style" href="../stylesheet.css">
+</head>
+<body>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<div class="topNav">
+<a name="navbar_top"></a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li class="navBarCell1Rev">Library</li>
+<li>Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?cf/tld-summary.html">
+									Frames
+								</a>
+</li>
+<li>
+<a href="tld-summary.html" target="_top">No Frames</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_top">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<div>
+<script type="text/javascript">
+								document.getElementById("alltags_navbar_top").style.display = (window == top) ? "block" : "none";
+							</script>
+</div>
+<a name="skip-navbar_top"></a>
+</div>
+<div class="header">
+<h1 title="Library" class="title">cf</h1>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>XML Declaration Syntax:</dt>
+<dd>
+<code>
+													&lt;anyxmlelement xmlns:cf="http://crudfaces.codebulb.ch"/&gt;
+												</code>
+</dd>
+</dl>
+<dl>
+<dt>Description:</dt>
+<dd>
+<div class="block">CrudFaces UI components.</div>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Library Summary table, listing library information">
+<caption>
+<span>Tag Library Information</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colFirst" scope="col">Info</th><th class="colLast" scope="col">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="rowColor">
+<td class="colFirst">ID (tag prefix)</td><td class="colLast"><code>cf</code></td>
+</tr>
+<tr class="altColor">
+<td class="colFirst">URI</td><td class="colLast"><code>http://crudfaces.codebulb.ch</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="summary">
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Tag Summary table, listing tag information">
+<caption>
+<span>Tag Summary</span><span class="tabEnd">&nbsp;</span>
+</caption>
+<thead>
+<tr>
+<th class="colOne" scope="col">Tag</th><th class="colLast" scope="col">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="rowColor">
+<td class="colOne"><b><a href="formLayout.html">formLayout</a></b></td><td class="colLast">
+			
+				<p>
+A container component to apply implicitly "form-like" (e.g. label / input /
+message) grid styling of its child components using a (responsive) CSS layout
+with out-of-the-box support for Bootstrap responsive form grid CSS classes.
+</p>
+<p>
+Modern interface stying is based on CSS, not HTML tables, because it embraces
+separation of design and functionality, and it enables sophisticated
+techniques such as responsive, mobile-friendly layouts. </p>
+<p>
+However, none of today's available JSF (component) frameworks deliver an
+easy-to-use abstraction for styling components using these techniques. The
+built-in containers for JSF and PrimeFaces, e.g.
+<code>&lt;panelGrid&gt;</code>, are based on HTML tables. PrimeFaces provides
+<a href="http://www.primefaces.org/showcase/ui/panel/grid.xhtml">
+an additional set of CSS grid classes</a>, but they don't seem to actually
+work responsively at all; also, they need to be applied explicitly.</p>
+<p>
+This is especially annoying as most JSF web applications typically make heavy
+use of quite simple grid-like form layouts, but using
+<code>&lt;panelGrid&gt;</code> or applying HTML tables / CSS explicitly is
+cumbersome and diminishes XHTML readability, especially when trying to align
+components in a certain way or when using "colspan" attributes. What we
+really want is a panelGrid, but which works with CSS classes and is built
+with responsiveness out-of-the box. This is what
+<code>&lt;cf:formLayout&gt;</code> provides.</p>
+<p>
+A <a href="http://www.bootsfaces.net/layout/panelgrids.jsf">similar component
+is also included in the BootsFaces library</a>, but it seems far more basic
+and doesn't come as real-world production-ready as
+ <code>&lt;cf:formLayout&gt;</code>.</p>
+<p>
+<code>&lt;cf:formLayout&gt;</code> implicitly applies the required CSS
+classes to its child components to build a simple form-like grid layout for a
+flexible amount of columns (default 2). It is preconfigured to use
+Bootstrap's form-horizontal styling CSS classes with its base 12 grid
+system.</p>
+<p>
+<code>&lt;cf:formLayout&gt;</code> also includes the following features:</p>
+<ul>
+<li><code>&lt;message&gt;</code>s are combined with their respective input
+component into one cell. This is typically desired because otherwise,
+non-present messages (which still render an empty cell) would create huge
+gaps in the UI.</li>
+<li>Buttons are by default put in a "button bar" at the bottom of the layout.
+If you want a particular button to stay inline, add the
+<code>a:inline="true"</code> HTML5 pass-through attribute to it. If on the
+other hand you want a non-button component to be placed in the "button bar",
+use the <code>a:buttonBar="true"</code> pass-through attribute.</li>
+</ul>
+<p>
+Note that <code>&lt;cf:formLayout&gt;</code> does not implement an actual
+HTML <code>&lt;form&gt;</code>, it's really just for layouting purposes which
+leaves you the free choice of how to integrate it in an actual HTML form.</p>
+<h2>Known restrictions</h2>
+<ul>
+<li>Nesting <code>&lt;cf:formLayout&gt;</code>s is not supported.</li>
+<li>Support for custom styling is very limited; explicitly override the
+default styles is not supported.</li>
+</ul>
+<p>
+These restrictions are most likely to be addressed and resolved in future
+CrudFaces versions.</p>
+			
+		</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><b><a href="readOnly.html">readOnly</a></b></td><td class="colLast">
+			
+				<p>
+A componenthandler tag which turns all (deep) nested input components into
+&lt;h:outputText&gt; components, thus rendering the "read only" equivalent.
+</p>
+<p>
+Although vanilla JSF provides the <code>disabled</code> attribute for every
+component, this attribute still renders the component in question as true
+input component, but grays it out such that the user cannot manipulate it.
+However, this does not cover the typical use-case of providing both a "write"
+and a "read" mode for a component or even an entire view as this view is
+expected to be presented as a true plain HTML output text. This is what is
+achieved by using the
+<code>&lt;cf:readOnly&gt;</code> tag.</p>
+<p>
+This component is realized as a simple JSF component, but with the special
+<code>ReadOnly</code> componenthandler attached which executes the actual
+transformation. Because the <code>id</code> attribute is kept if explicitly
+set for the original input component, it can still be targetted by e.g. an
+<code>&lt;outputLabel&gt;</code>, a
+<code>&lt;message&gt;</code>, or a <code>&lt;p:focus&gt;</code> component,
+hence preventing "target not found" errors.</p>
+<h2>Usage</h2>
+<p>
+Using the tag is somewhat similar to OmniFaces'
+<code>&lt;o:massAttribute&gt;</code> tag: Just surround the component(s) in
+question with the tag. Of course, you can switch between input and output
+rendering conditionally using the component's <code>disabled</code>
+attribute.</p>
+
+<h2>Known restrictions</h2>
+<ul>
+<li>Only simple text input PrimeFaces components are supported.</li>
+</ul>
+<p>
+These restrictions are most likely to be addressed and resolved in future
+CrudFaces versions.</p>
+			
+		</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="bottomNav">
+<a name="navbar_bottom"></a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow"></a>
+<ul class="navList" title="Navigation">
+<li>
+<a href="../overview-summary.html">Overview</a>
+</li>
+<li class="navBarCell1Rev">Library</li>
+<li>Tag</li>
+<li>
+<a href="../help-doc.html">Help</a>
+</li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>
+<a target="_top" href="../index.html?cf/tld-summary.html">
+									Frames
+								</a>
+</li>
+<li>
+<a href="tld-summary.html" target="_top">No Frames</a>
+</li>
+</ul>
+<ul class="navList" id="alltags_navbar_bottom">
+<li>
+<a href="../alltags-noframe.html">All Tags</a>
+</li>
+</ul>
+<script type="text/javascript">
+							document.getElementById("alltags_navbar_bottom").style.display = (window == top) ? "block" : "none";
+						</script><a name="skip-navbar_bottom"></a>
+</div>
+<p class="about">Output generated by <a href="http://vdldoc.omnifaces.org" target="_blank">Vdldoc</a> View Declaration Language Documentation Generator.</p>
+</body>
+</html>
