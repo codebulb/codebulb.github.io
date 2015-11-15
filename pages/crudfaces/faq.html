@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <title>CrudFaces</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="/css/page.css">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+		
+		<!-- Google Analytics -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-60515101-1', 'auto');
+		ga('send', 'pageview');
+
+		</script>
+    </head>
+    <body role="document">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+				<div class="navbar-header">
+					<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">CrudFaces</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active" style="margin-left: 100px;"><a href="http://jbosswildfly-codebulb.rhcloud.com/CrudFacesDemo/">Showcase</a></li>
+					<li class="active"><a href="https://github.com/codebulb/crudfaces">Download & Install</a></li>
+					<li class="active"><a href="http://codebulb.github.io/pages/crudfaces/doc/">API doc</a></li>
+					<li class="active"><a href="http://codebulb.github.io/pages/crudfaces/vdldoc/">VDL doc</a></li>
+					<li class="active"><a href="#">FAQ</a></li>
+				</ul>
+				<div class="navbar-collapse collapse" id="navbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="http://codebulb.github.io/pages/crudfaces/"><span class="fa fa-lg fa-github"></span>Project home</a></li>
+						<li><a href="http://www.codebulb.ch"><span class="fa fa-lg fa-home"></span>Blog</a></li>
+					</ul>
+				</div>
+			</div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1 class="page-header">FAQ</h1>
+		
+		<h2>Is this production-ready?</h2>
+		<p>Not at all. Until 1.0 release, I would consider this framework
+		“experimental”. Of course, I have made great effort to ensure that all
+		provided functionality works as expected, but at the current stage,
+		there are just no guarantees. Still, the framework already provides a
+		couple of very useful components which seemingly work very well.
+		</p>
+		<p>Of course, I highly encourage you to test it out, especially
+		if you find that it covers a specific requirement your project it
+		currently facing. The only way for the framework to mature over time is
+		by developer feedback. Your opinion, suggestions and experiences
+		are highly appreciated.
+		</p>
+		
+		<h2>I already have PrimeFaces and OmniFaces on my tech stack. Why should I add yet another framework?</h2>
+		<p>Actually, it’s the other way around. Both PrimeFaces and
+		OmniFaces are for the most part not really frameworks, but rather
+		component libraries. CrudFaces, on the other hand, consists of both a
+		component library as well as a framework, however the latter really
+		only consists of a few Java classes.
+		</p>
+		<p>In fact, CrudFaces is the perfect addition for an existing
+		PrimeFaces + OmniFaces stack. It smoothes out PrimeFaces experience and
+		uses basic OmniFaces components to build even more sophisticated
+		ready-to-use solutions on top of them.
+		</p>
+		<p>CrudFaces addresses any typical JSF project with persistence
+		backend CRUD operations on entities. You can use CrudFaces to:
+		</p>
+		<ul>
+			<li>Build a JSF application from scratch. CrudFaces will make
+			sure that everything basically works and looks good, drastically
+			diminishing the need to apply your own hacks and workarounds.</li>
+			<li>Use CrudFaces components as a guidance to ensure best
+			practices compliance of your architecture.</li>
+			<li>Use whatever specific component covers any given current
+			requirement in your project, and leave out the rest.</li>
+		</ul>
+		
+		<h2>What’s your motivation behind this project?</h2>
+		<p>Years of painful, repetitive work. I’ve been working on JSF
+		projects for 5+ years now and I’ve come to the realization that most
+		JSF projects are basically the same and basically need the same work
+		done over and over again. This clearly violates the “Don’t repeat
+		yourself” (DRY) engineering best-practice.
+		</p>
+		<p>What’s more, when working with a JSF / PrimeFaces stack it
+		often feels like by default, things do not work, and if they do, they
+		look ugly by default, which is the exact opposite of what I except from
+		a modern, developer-friendly framework. So, in this situation again,
+		one has to waste precious development time by reinventing the same
+		hacks and solutions all over again.
+		</p>
+		<p>But I’m not good at complaining. I’m better at finding
+		solutions. I really want to turn this project into a place where I can
+		put my knowledge and experience in, and use it as a save starting point
+		to build new JSF projects the right way.
+		</p>
+		
+		<h2>Why didn’t you just contribute your stuff to the OmniFaces project?</h2>
+		<p>First of all, these two frameworks have a different focus. As
+		explained above, OmniFaces is a (great) library of components which
+		work independently of each other and solve very specific problems.
+		CrudFaces, on the other hand, provides a set of tools which work best
+		in combination for a smooth overall experience. It’s CrudFaces’ aim to
+		guide developers towards maximum best practices compliance which can
+		best be achieved with a small, but complete solution working as a unit.
+		</p>
+		<p>Secondly, at the moment, CrudFaces has only just been released.
+		Give it some time to become a more mature framework and we can
+		talk about moving tools to the OmniFaces project. I wouldn’t dare
+		contributing stuff which is quite experimental to that great framework,
+		and I feel like the overall quality just has not quite reached
+		OmniFaces standard yet.
+		</p>
+		
+		<h2>Why does your project page and the showcase run on a free hoster? It looks kind of cheap.</h2>
+		<p>CrudFaces still is a small private project of mine without any
+		financial budget whatsoever. If this turns out to be of common interest
+		I can imagine opening up a public donation account. Please let me know
+		if you would be interested in supporting the project in that way.
+		</p>
+		
+		<h2>This is 2015. Isn’t JSF an obsolete stone-age technology by now?</h2>
+		<p>It is certainly true that nowadays, JSF isn’t by far the only
+		available option to create modern high quality web applications, and
+		that’s a good thing. However, it is still a viable option especially if
+		you can’t effort exposing your backend API or your HTML rendering to
+		the web (as is typically the case with modern JavaScript-based
+		solutions such as AngularJS), and if you want to keep the maturity,
+		security and existing expertise a Java environment offers.
+		</p>
+		<p>I’ve seen people turning down JSF because of a lack of
+		understanding of underlying concepts, such as REST, and their proper
+		application. Lack of understanding should not be a reason to give up a
+		technology because even if you move on, you may encounter the same
+		problems with a different platform.
+		</p>
+		
+		<h2>This looks interesting. How can I contribute?</h2>
+		<p>To be honest, I haven’t made any plans for public
+		contributions to this project yet. However, I’m open to accept
+		contributions. Most certainly, you can already hand in bug reports or
+		feature requests (as long as they seem to match the overall project
+		goal). If you spot a bug and find a solution for it, feel free to open
+		a pull request. Please let me know whether you would be interested in
+		joining the project in mid / long term.
+		</p>
+		
+		<h2>Who’s that guy wearing the bear skin?</h2>
+		<p>This is Org; he is CrudFaces’ mascot. The story goes that he
+		invented the wheel after a small, marble-shaped meteorite fragment hit
+		his head.
+		</p>
+		
+		<h2>Is there anything else you’d like to say?</h2>
+		<p>Yes, I’d like to thank Bauke Scholtz (BalusC) and Arjan Tijms
+		from OmniFaces not only for their marvelous work on that excellent
+		framework, but also for generously sharing their JSF knowledge about
+		the JSF technology through their project source code, their articles
+		and their innumerable stackoverflow contributions. I have learnt a
+		great deal about JSF by studying what they have posted, and without
+		what I have learnt from them, I don’t think I would have been able to
+		build CrudFaces.
+		</p>
+    </div> <!-- /container -->
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted text-center">Copyright &copy; 2015 Nicolas Hofstetter (codebulb.ch). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
