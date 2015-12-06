@@ -1,0 +1,12 @@
+ch.codebulb.crudfaces
+ch.codebulb.crudfaces.component
+ch.codebulb.crudfaces.componenthandler
+ch.codebulb.crudfaces.controller
+ch.codebulb.crudfaces.managedbeans
+ch.codebulb.crudfaces.model
+ch.codebulb.crudfaces.renderer
+ch.codebulb.crudfaces.renderkit
+ch.codebulb.crudfaces.scopes
+ch.codebulb.crudfaces.service
+ch.codebulb.crudfaces.util
+ch.codebulb.crudfaces.validator

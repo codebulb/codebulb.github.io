@@ -2,7 +2,7 @@
 <html lang="en" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:vdldoc="http://vdldoc.omnifaces.org" xmlns:fo="http://www.w3.org/1999/XSL/Format">
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>readOnly (CrudFaces 1.0 VDL Documentation)
+<title>readOnly (CrudFaces 0.2 VDL Documentation)
 			</title>
 <meta name="keywords" content="$title">
 <link rel="stylesheet" type="text/css" title="Style" href="../stylesheet.css">
@@ -88,8 +88,10 @@ set for the original input component, it can still be targetted by e.g. an
 <code>&lt;message&gt;</code>, or a <code>&lt;p:focus&gt;</code> component,
 hence preventing "target not found" errors.</p>
 <h2>Usage</h2>
+<p>Add the CrudFaces Facelets library declaration <code>xmlns:cf=&quot;http://crudfaces.codebulb.ch&quot;</code>
+and use the <code>&lt;cf:readOnly&gt;</code> component as shown in the demo showcase.</p>
 <p>
-Using the tag is somewhat similar to OmniFaces'
+Using the tag is quite similar to OmniFaces'
 <code>&lt;o:massAttribute&gt;</code> tag: Just surround the component(s) in
 question with the tag. Of course, you can switch between input and output
 rendering conditionally using the component's <code>disabled</code>
@@ -97,13 +99,13 @@ attribute.</p>
 
 <h2>Known restrictions</h2>
 <ul>
-<li>Only simple text input PrimeFaces components are supported.</li>
+<li>Only basic PrimeFaces components are supported.</li>
 </ul>
 <p>
 These restrictions are most likely to be addressed and resolved in future
 CrudFaces versions.</p>
 			
-		</div>
+        </div>
 </dd>
 </dl>
 </li>
@@ -153,7 +155,7 @@ CrudFaces versions.</p>
 				
 					<p><code>true</code> to disable the functionality. <i>Defaults to <code>false</code>.</i></p>
 				
-			</td>
+            </td>
 </tr>
 </tbody>
 </table>

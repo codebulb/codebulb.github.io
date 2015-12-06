@@ -9,4 +9,5 @@ ch.codebulb.crudfaces.renderkit
 ch.codebulb.crudfaces.scopes
 ch.codebulb.crudfaces.service
 ch.codebulb.crudfaces.util
+ch.codebulb.crudfaces.validation.constraints
 ch.codebulb.crudfaces.validator
