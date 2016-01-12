@@ -1,0 +1,6 @@
+ch.codebulb.crudlet.config
+ch.codebulb.crudlet.model
+ch.codebulb.crudlet.model.exceptions
+ch.codebulb.crudlet.service
+ch.codebulb.crudlet.util
+ch.codebulb.crudlet.webservice
